@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Categoría 1">
+        <CheckBoxPreference
+            android:key="id_password"
+            android:title="Recordar password"
+            android:summary="Descripción de la preferencia 1" />
+        <EditTextPreference
+            android:key="id_nombre_usuario"
+            android:title="Nombre usuario"
+            android:summary="Descripción de la preferencia 2"
+            android:dialogTitle="Introduce valor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Categoría 2">
+        <ListPreference
+            android:key="id_pais"
+            android:title="Seleccione un pais"
+            android:summary="Descripción de la preferencia 3"
+            android:dialogTitle="Indicar Pais"
+            android:entries="@array/pais"
+            android:entryValues="@array/codigopais" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
+
+
+
